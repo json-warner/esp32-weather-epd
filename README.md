@@ -74,7 +74,7 @@ DESPI-C02 Adapter Board
 
 - No level converters, which makes it better for low-power use with 3.3V processors compared to the Waveshare HAT.
 
-- Waveshare started shipping revision 2.3 of their e-paper HAT. Some users have reported issues with this HAT ([#62](https://github.com/lmarzen/esp32-weather-epd/issues/62)).
+- The Waveshare HATs (rev 2.2/2.3) are not recommended. Their compatibility with this project is not regularly tested.
 
 - https://www.e-paper-display.com/products_detail/productId=403.html
   
@@ -139,6 +139,7 @@ Stand/Frame
   
     | Contributor                                                          | Link                                                                                                     |
     |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+    | [Kingfisher](https://www.printables.com/@Kingfisher_32821)           | [Printables](https://www.printables.com/model/1139047-weather-station-e-ink-frame)                       |
     | [Francois Allard](https://www.printables.com/@FrAllard_1585397)      | [Printables](https://www.printables.com/model/791477-weather-station-using-a-esp32)                      |
     | [3D Nate](https://www.printables.com/@3DNate_451157)                 | [Printables](https://www.printables.com/model/661183-e-ink-weather-station-frame)                        |
     | [Sven F.](https://github.com/Spanholz)                               | [Printables](https://www.printables.com/model/657756-case-for-esp32-weather-station)                     |
@@ -158,6 +159,8 @@ Pin connections are defined in [config.cpp](platformio/src/config.cpp).
 If you are using the FireBeetle 2 ESP32-E, you can use the connections I used or change them how you would like.
 
 I have included 2 wiring diagrams. One for the Waveshare HAT rev2.2 and another using the recommended DESPI-C02.
+
+NOTE: Waveshare now ships revision 2.3 of their e-paper HAT (no longer rev 2.2 ). Rev 2.3 has an additional `PWR` pin (not depicted in the wiring diagrams below); connect this pin to 3.3V.
 
 IMPORTANT: The Waveshare E-Paper Driver HAT has two physical switches that MUST be set correctly for the display to work.
 
